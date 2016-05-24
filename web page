@@ -1,0 +1,87 @@
+
+
+<!doctype=html>
+<html>
+
+<head>
+<style>
+#heading {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#ip {
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;
+}
+#section {
+    width:500px;
+    height:150px;
+    padding:40px;
+    border:10px;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+</style>
+<title>
+vishal kashyap's ip window for you!
+</title>
+<meta name="iit student page" content="about vishal">
+
+<body>
+
+<div id="heading">
+WELCOME TO MY PAGE!
+</div>
+
+<div id="ip">
+<input type="image" src="http://i.klip.in/m/IX33uf6LSOSDTw5rDoUhre4nXFM1Ts0S0R7XgVelcsDMOAxCKtKTLa6qkLr4rSzvcKxJccGGqB93Enecmq1tpcky-rc-ZoklLpZUo-PZLuOLSldYd1oXrwWpSexrHQmrf8Dh0Bp3YXdK3BLAGk4DAWFiY2RlZmdoYmNkZWZlZmc,/i-know-your-ip-address-stretched-canvas-print.jpg"id="ip" onclick="fun()">
+</div>
+
+<div id="heading1">
+<p> you are about to know your ip </p>
+</div>
+
+<div id="section">
+<p>
+
+
+<h1>What is Lorem Ipsum?</h1>
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+</p>
+</div>
+
+<div id="footer">
+<p>For more contact me at : <a href=https://www.facebook.com/> "This place" </a> </p>
+</div>
+
+<script>
+function fun()
+{
+var xhr = new XMLHttpRequest();
+
+xhr.onreadystatechange = function(){
+ if (xhr.readyState == 4 && xhr.status == 200) {
+        alert(xhr.responseText);
+    }
+};
+xhr.open('GET', "http://icanhazip.com/", true);
+xhr.send();
+ 
+}
+
+
+</script>
+</body>
+
+
+</html>
